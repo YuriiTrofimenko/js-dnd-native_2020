@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Advanced Topics</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h2>Drag and drop HTML5 Example</h2>
+  <div>
+    <div id="objToBeDragged" class="dragClass" draggable="true" onDragStart="return dragStart(event)">
+      <p>Drag Me</p>
+    </div>
+  </div>
+  <div id="objToBeDropped" class="dropClass" onDragEnter="return dragEnter(event)"
+    onDrop="return dragDrop(event)" onDragOver="return dragOver(event)">
+    <p>Drop Here</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
